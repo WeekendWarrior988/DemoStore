@@ -1,0 +1,2 @@
+Cannot deserialize instance of `java.util.HashSet` out of VALUE_NUMBER_INT token
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 38] (through reference chain: lt.bta.Demo.jpa.entities.Cart["lines"])

@@ -1,0 +1,49 @@
+GET http://localhost:8080/belekas/api/auth/list
+Accept: application/json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/create
+Content-Type: application/json
+Accept: application/json
+
+{"username": "belekas@sample.com", "password":  "belekas", "role": "USER"}
+
+###
+
+POST http://localhost:8080/belekas/api/auth/create
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas", "role": "ADMIN"}
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+###
+
+GET http://localhost:8080/belekas/api/auth/genkey/256
+Accept: application/json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "sample", "password":  "belekas"}
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "belekas@sample.com", "password":  "sample"}
+
+###

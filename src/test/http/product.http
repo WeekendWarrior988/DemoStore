@@ -1,0 +1,23 @@
+GET http://localhost:8080/belekas/api/product/list
+Accept: application/json
+
+###
+
+GET http://localhost:8080/belekas/api/product/3
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/belekas/api/product/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 5,
+  "name": "Windows Vista",
+  "description": "New features of Windows Vista include an updated graphical user interface and visual style dubbed Aero",
+  "price": 1.99,
+  "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Windows_Vista.png"
+}
+
+###

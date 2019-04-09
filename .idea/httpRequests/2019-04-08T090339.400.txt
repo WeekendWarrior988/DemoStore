@@ -1,0 +1,2 @@
+Unrecognized field "product_id" (class lt.bta.Demo.requests.AddInvoiceLineRequest), not marked as ignorable (2 known properties: "id", "qty"])
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 18] (through reference chain: lt.bta.Demo.requests.AddInvoiceLineRequest["product_id"])

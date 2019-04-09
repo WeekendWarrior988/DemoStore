@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">h1 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    b {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+    }
+
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    a.name {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> org.glassfish.jersey.server.ContainerException: java.lang.ExceptionInInitializerError</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>javax.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.ExceptionInInitializerError
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:408)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.glassfish.jersey.server.ContainerException: java.lang.ExceptionInInitializerError
+	org.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:254)
+	org.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:236)
+	org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:436)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.ExceptionInInitializerError
+	lt.bta.Demo.api.Dao.&lt;init&gt;(Dao.java:23)
+	lt.bta.Demo.api.services.UserService.create(UserService.java:45)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base&#47;jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:566)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>javax.persistence.PersistenceException: [PersistenceUnit: pers] Unable to build Hibernate SessionFactory
+	org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1012)
+	org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:938)
+	org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	lt.bta.Demo.helpers.EntityManagerHelper.&lt;clinit&gt;(EntityManagerHelper.java:15)
+	lt.bta.Demo.api.Dao.&lt;init&gt;(Dao.java:23)
+	lt.bta.Demo.api.services.UserService.create(UserService.java:45)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base&#47;jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:566)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.IllegalArgumentException: Unable to locate Attribute  with the the given name [carts] on this ManagedType [lt.bta.Demo.jpa.entities.User]
+	org.hibernate.metamodel.model.domain.internal.AbstractManagedType.checkNotNull(AbstractManagedType.java:147)
+	org.hibernate.metamodel.model.domain.internal.AbstractManagedType.getAttribute(AbstractManagedType.java:118)
+	org.hibernate.graph.spi.GraphImplementor.findOrCreateAttributeNode(GraphImplementor.java:98)
+	org.hibernate.graph.internal.AbstractGraph.addAttributeNode(AbstractGraph.java:175)
+	org.hibernate.metamodel.internal.MetamodelImpl.applyNamedAttributeNodes(MetamodelImpl.java:380)
+	org.hibernate.metamodel.internal.MetamodelImpl.applyNamedEntityGraphs(MetamodelImpl.java:367)
+	org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:284)
+	org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:294)
+	org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	lt.bta.Demo.helpers.EntityManagerHelper.&lt;clinit&gt;(EntityManagerHelper.java:15)
+	lt.bta.Demo.api.Dao.&lt;init&gt;(Dao.java:23)
+	lt.bta.Demo.api.services.UserService.create(UserService.java:45)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base&#47;jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base&#47;jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:566)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.17</h3></body>
+</html>

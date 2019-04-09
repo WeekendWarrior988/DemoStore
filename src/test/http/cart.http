@@ -1,0 +1,12 @@
+GET http://localhost:8080/belekas/api/cart/1
+Accept: application/json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/1
+Accept: application/json
+Content-Type: application/json
+
+{"id": 2, "qty": 20}
+
+###

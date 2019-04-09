@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="pers" transaction-type="RESOURCE_LOCAL">
+        <class>lt.bta.Demo.jpa.entities.Client</class>
+        <class>lt.bta.Demo.jpa.entities.Product</class>
+        <class>lt.bta.Demo.jpa.entities.Invoice</class>
+        <class>lt.bta.Demo.jpa.entities.InvLine</class>
+        <class>lt.bta.Demo.jpa.entities.User</class>
+        <class>lt.bta.Demo.jpa.entities.Cart</class>
+        <class>lt.bta.Demo.jpa.entities.CartLine</class>
+        <properties>
+            <!--&lt;!&ndash;javax properties&ndash;&gt;-->
+            <!--&lt;!&ndash;<property name="javax.persistence.jdbc.driver" value="Database Driver Name" />&ndash;&gt;-->
+            <!--<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />-->
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/store" />-->
+            <!--<property name="javax.persistence.jdbc.user" value="root" />-->
+            <!--<property name="javax.persistence.jdbc.password" value="" />-->
+            <!--&lt;!&ndash;galime prideti duomenis&ndash;&gt;-->
+            <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+            <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/>-->
+
+            <!--&lt;!&ndash;hibernate properties&ndash;&gt;-->
+            <!--&lt;!&ndash;matome kokios daromos sql uzklausos&ndash;&gt;-->
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />-->
+            <!--<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/store"/>-->
+            <!--<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>-->
+            <!--<property name="hibernate.show_sql" value="true" />-->
+            <!--<property name="hibernate.format_sql" value="true" />-->
+            <!--&lt;!&ndash;isitikinti jog visi laukai yra aprasyti teisingai&ndash;&gt;-->
+            <!--&lt;!&ndash;<property name="hibernate.hbm2ddl.auto" value="validate" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<property name="hibernate.hbm2ddl.auto" value="create-drop" />&ndash;&gt;-->
+
+
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="hibernate.dialct" value="org.hibernate.dialect.MySQL55Dialect" />
+            <!--                                                                           store                 -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/store?useUnicode=yes&amp;characterEncoding=UTF-8" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+
+            <!-- rodo kokį sql query kodą sugeneruoja persistens -->
+            <property name="hibernate.show_sql" value="true"/>
+
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+
+            <!-- validacija, užtikrina kad visi kintamiej sutampa su duomenų bazės laukais -->
+            <!-- paprastai pirmiausia kuriame klases aki DB jau sukuta -->
+            <!--<property name="hibernate.hbm2ddl.auto" value="validate" />-->
+
+            <!-- sukuria papildomą lauką jeigu randa klasę su nauju lauku -->
+            <!--<property name="hibernate.hbm2ddl.auto" value="update" />-->
+
+            <!-- ištrina BD lenteles, o po to sukuria naujas -->
+            <!-- naudojamas kai norime pirmiau susikurti klases -->
+            <!-- todo turi validate, kaip suprasti ??? -->
+            <!--<property name="hibernate.hbm2ddl.auto" value="create-drop" />-->
+
+            <!-- trina/sukuria lenteles su užpildytais duomenimis kurie yra META-INF/data.sql faile-->
+            <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+            <!--&lt;!&ndash; todo rasti utf-8 &ndash;&gt;-->
+            <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/>-->
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/store"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data_destytojo.sql"/>-->
+        </properties>
+    </persistence-unit>
+</persistence>
