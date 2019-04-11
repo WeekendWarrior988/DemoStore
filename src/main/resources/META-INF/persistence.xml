@@ -59,9 +59,9 @@
             <!--<property name="hibernate.hbm2ddl.auto" value="create-drop" />-->
 
             <!-- trina/sukuria lenteles su užpildytais duomenimis kurie yra META-INF/data.sql faile-->
-            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
-            <!-- todo rasti utf-8 -->
-            <property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/>
+            <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+            <!--&lt;!&ndash; todo rasti utf-8 &ndash;&gt;-->
+            <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/>-->
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/store"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data_destytojo.sql"/>-->

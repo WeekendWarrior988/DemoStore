@@ -4,7 +4,7 @@ import lt.bta.Demo.api.services.CartService;
 import lt.bta.Demo.api.services.InvoiceService;
 import lt.bta.Demo.api.services.ProductService;
 import lt.bta.Demo.api.services.UserService;
-import lt.bta.Demo.filters.AuthenticationFilter;
+//import lt.bta.Demo.filters.AuthenticationFilter;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 
@@ -19,7 +19,7 @@ public class App extends ResourceConfig {
         register(InvoiceService.class);
         register(ProductService.class);
         register(UserService.class);
-        register(AuthenticationFilter.class);
+//        register(AuthenticationFilter.class);
         register(CartService.class);
         property(ServerProperties.RESPONSE_SET_STATUS_OVER_SEND_ERROR, true);
     }

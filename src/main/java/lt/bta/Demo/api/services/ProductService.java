@@ -20,7 +20,7 @@ public class ProductService extends BaseService<Product> {
         return Product.class;
     }
 
-    @AccessRoles({Role.USER, Role.ADMIN})
+//    @AccessRoles({Role.USER, Role.ADMIN})
     @Override
     public Response list(int size, int skip) {
 //        HttpSession session=servletRequest.getSession();

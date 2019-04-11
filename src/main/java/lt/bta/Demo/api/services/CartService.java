@@ -11,10 +11,7 @@ import lt.bta.Demo.requests.AddInvoiceLineRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import java.util.UUID;
@@ -33,7 +30,7 @@ public class CartService extends BaseService<Cart> {
 //    @Override
 //    public Response add(CartItem cart) {
 //        HttpSession session = servletRequest.getSession();
-//        User user = session.getAttribute("user");
+////        User user = session.getAttribute("user");
 //
 //
 //        Dao<Cart> dao =createDao();
@@ -42,25 +39,25 @@ public class CartService extends BaseService<Cart> {
 //        return Response.ok(cart).build();
 //    }
 
-    @POST
-    @Override
-    public Response add(Cart cart) {
-        Dao<Cart> dao =createDao();
-        cart.setUuid(UUID.randomUUID());
-        dao.create(cart);
-        return Response.ok(cart).build();
-    }
-
-//    @GET
-//    @Path("/{id}/f")
-//    public Response getFull(@PathParam("id") int id){
-//        Dao<Cart> dao = createDao();
-//
-//        Cart entity = dao.read(id, Cart.GRAPH_PRODUCTS);
-//
-//        if(entity == null) return Response.status(Response.Status.NOT_FOUND).build();
-//        return Response.ok(entity).build();
+//    @POST
+//    @Override
+//    public Response add(Cart cart) {
+//        Dao<Cart> dao =createDao();
+//        cart.setUuid(UUID.randomUUID());
+//        dao.create(cart);
+//        return Response.ok(cart).build();
 //    }
+
+    @GET
+    @Path("/{id}/f")
+    public Response getFull(@PathParam("id") int id){
+        Dao<Cart> dao = createDao();
+
+        Cart entity = dao.read(id, Cart.GRAPH_PRODUCTS);
+
+        if(entity == null) return Response.status(Response.Status.NOT_FOUND).build();
+        return Response.ok(entity).build();
+    }
 //
     @POST
     @Path("/{id}")
@@ -91,4 +88,17 @@ public class CartService extends BaseService<Cart> {
 //        Dao<Cart> dao = createDao();
 //        return Response.ok().entity(dao.listAll()).build();
 //    }
+
+    @POST
+    @Path("/add")
+    public Response addProduct() {
+        HttpSession session = servletRequest.getSession();
+        Cart cart = (Cart) session.getAttribute("cart");
+        if (cart == null) {
+            cart = new Cart();
+            session.setAttribute("cart", cart);
+        }
+        cart.setItemCount(cart.getItemCount()+1);
+        return Response.ok(cart).build();
+    }
 }

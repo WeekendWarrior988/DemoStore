@@ -45,9 +45,9 @@
         <thead>
         <tr>
             <th></th>
-            <th>Pavadinimas</th>
-            <th>Aprašymas</th>
-            <th>Kaina</th>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
             <th></th>
         </tr>
         </thead>
@@ -66,7 +66,7 @@
             <th style="width:50%">Product</th>
             <th style="width:10%">Price</th>
             <th style="width:8%">Quantity</th>
-            <th style="width:22%" class="text-center">Sum</th>
+            <th style="width:22%"></th>
             <th style="width:10%"></th>
         </tr>
         </thead>

@@ -20,7 +20,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8080/belekas/api/invoice/1/f
+GET http://localhost:8080/belekas/api/invoice/1
 Accept: application/json
 
 ###
@@ -34,6 +34,6 @@ POST http://localhost:8080/belekas/api/invoice/1
 Accept: application/json
 Content-Type: application/json
 
-{"id": 5, "qty": 99}
+{"id": 5, "qty": 55}
 
 ###

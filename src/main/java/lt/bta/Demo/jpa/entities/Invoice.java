@@ -30,7 +30,7 @@ public class Invoice {
     @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
 
-    @JsonIgnore
+//    @JsonIgnore
     @OneToMany(mappedBy = "invoice", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<InvLine> lines;
 

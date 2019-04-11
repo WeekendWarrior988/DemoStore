@@ -25,7 +25,8 @@ public class Cart {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
-    private UUID uuid;
+
+    private int itemCount;
 
     public User getUser() {
         return user;
@@ -35,15 +36,15 @@ public class Cart {
         this.user = user;
     }
 
-    public UUID getUuid() {
-        return uuid;
+    public int getItemCount() {
+        return itemCount;
     }
 
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
+    public void setItemCount(int itemCount) {
+        this.itemCount = itemCount;
     }
 
-//    @JsonIgnore
+    //    @JsonIgnore
     @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<CartLine> lines;
 

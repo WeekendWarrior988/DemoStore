@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "sum": null,
+    "user": null,
+    "uuid": "73cfbac0-b792-44d2-a248-6f01085bc6eb",
+    "lines": [
+      {
+        "id": 1,
+        "qty": 1,
+        "price": 9.99
+      },
+      {
+        "id": 3,
+        "qty": 1,
+        "price": 9.99
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sum": null,
+    "user": null,
+    "uuid": "85885f26-70ed-4dc7-a8c0-63e32094e01a",
+    "lines": null
+  },
+  {
+    "id": 3,
+    "sum": null,
+    "user": null,
+    "uuid": "4f227b8e-4e0c-4f98-8437-64199d3c06bc",
+    "lines": null
+  },
+  {
+    "id": 4,
+    "sum": null,
+    "user": null,
+    "uuid": "308a093e-488c-4b54-9d7d-e349eddbf398",
+    "lines": null
+  }
+]

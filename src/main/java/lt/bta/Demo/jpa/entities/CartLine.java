@@ -13,11 +13,11 @@ public class CartLine {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-//    @JsonIgnore
+    @JsonIgnore
     @ManyToOne
     private Cart cart;
 
-//    @JsonIgnore
+    @JsonIgnore
     @ManyToOne
     private Product product;
 
