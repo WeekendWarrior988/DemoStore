@@ -41,7 +41,7 @@
         </ul>
     </nav>
 
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" id="products-table">
         <thead>
         <tr>
             <th></th>
@@ -64,6 +64,7 @@
         <thead>
         <tr>
             <th style="width:50%">Product</th>
+            <th style="width:50%">Name</th>
             <th style="width:10%">Price</th>
             <th style="width:8%">Quantity</th>
             <th style="width:22%"></th>
@@ -82,7 +83,7 @@
             <td><a href="#" class="btn btn-info" id="cart-showProduct">
                 <span class="glyphicon glyphicon-shopping-cart"></span>Continue shopping</a></td>
             <td colspan="2" class="hidden-xs"></td>
-            <td class="hidden-xs text-center"><strong>Total $0.00</strong></td>
+            <td class="hidden-xs text-center" id="total"><strong>Total $</strong></td>
             <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
         </tr>
         </tfoot>

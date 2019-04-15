@@ -17,10 +17,19 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/belekas/api/cart/5
+POST http://localhost:8080/belekas/api/cart/1
 Accept: application/json
 Content-Type: application/json
 
 {"id": 5, "qty": 5}
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=FB5DFA312C823E6B1B4BAE916DB0FFC9
+
+{"id": 3, "qty": 2}
 
 ###

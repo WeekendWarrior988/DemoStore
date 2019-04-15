@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "sum": null,
+  "user": null,
+  "itemCount": 0,
+  "lines": [
+    {
+      "id": 3,
+      "qty": 5,
+      "price": 19.99
+    },
+    {
+      "id": 1,
+      "qty": 5,
+      "price": 19.99
+    },
+    {
+      "id": 7,
+      "qty": 5,
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "qty": 5,
+      "price": 19.99
+    }
+  ]
+}

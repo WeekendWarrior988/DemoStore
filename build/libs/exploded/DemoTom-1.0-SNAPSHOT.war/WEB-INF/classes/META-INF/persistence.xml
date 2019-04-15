@@ -34,15 +34,13 @@
 
 
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-            <property name="hibernate.dialct" value="org.hibernate.dialect.MySQL55Dialect" />
-            <!--                                                                           store                 -->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/store?useUnicode=yes&amp;characterEncoding=UTF-8" />
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="" />
 
             <!-- rodo kokį sql query kodą sugeneruoja persistens -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL55Dialect" />
             <property name="hibernate.show_sql" value="true"/>
-
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
 
@@ -50,21 +48,11 @@
             <!-- paprastai pirmiausia kuriame klases aki DB jau sukuta -->
             <!--<property name="hibernate.hbm2ddl.auto" value="validate" />-->
 
-            <!-- sukuria papildomą lauką jeigu randa klasę su nauju lauku -->
-            <!--<property name="hibernate.hbm2ddl.auto" value="update" />-->
-
-            <!-- ištrina BD lenteles, o po to sukuria naujas -->
-            <!-- naudojamas kai norime pirmiau susikurti klases -->
-            <!-- todo turi validate, kaip suprasti ??? -->
             <!--<property name="hibernate.hbm2ddl.auto" value="create-drop" />-->
-
-            <!-- trina/sukuria lenteles su užpildytais duomenimis kurie yra META-INF/data.sql faile-->
             <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
-            <!--&lt;!&ndash; todo rasti utf-8 &ndash;&gt;-->
             <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data.sql"/>-->
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/store"/>
-            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/data_destytojo.sql"/>-->
+            <!--<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/store"/>-->
+            <!--<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>-->
         </properties>
     </persistence-unit>
 </persistence>

@@ -1,20 +1,17 @@
 package lt.bta.Demo.jpa.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Set;
-import java.util.UUID;
 
 @Entity
 @Table(name = "carts")
 @NamedEntityGraph(
         name = Cart.GRAPH_PRODUCTS,
-        attributeNodes = @NamedAttributeNode("lines")
+        attributeNodes = @NamedAttributeNode("cartLines")
 )
 public class Cart {
-    public static final String GRAPH_PRODUCTS = "cart-lines";
+    public static final String GRAPH_PRODUCTS = "graph.cart.lines";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,9 +22,6 @@ public class Cart {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
-
-    private int itemCount;
-
     public User getUser() {
         return user;
     }
@@ -36,17 +30,8 @@ public class Cart {
         this.user = user;
     }
 
-    public int getItemCount() {
-        return itemCount;
-    }
-
-    public void setItemCount(int itemCount) {
-        this.itemCount = itemCount;
-    }
-
-    //    @JsonIgnore
     @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<CartLine> lines;
+    private Set<CartLine> cartLines;
 
     public int getId() {
         return id;
@@ -57,24 +42,30 @@ public class Cart {
     }
 
     public BigDecimal getSum() {
-        return sum;
+        BigDecimal cartSum = BigDecimal.ZERO;
+        for (CartLine cartLine : cartLines) {
+            if (cartLine.getProduct().getPrice() != null) {
+                cartSum = cartSum.add(BigDecimal.valueOf(cartLine.getQty()).multiply(cartLine.getProduct().getPrice()));
+            }
+        }
+        return cartSum;
     }
 
     public void setSum(BigDecimal sum) {
         this.sum = sum;
     }
 
-    public Set<CartLine> getLines() {
-        return lines;
+    public Set<CartLine> getCartLines() {
+        return cartLines;
     }
 
-    public void setLines(Set<CartLine> lines) {
-        this.lines = lines;
+    public void setCartLines(Set<CartLine> lines) {
+        this.cartLines = lines;
     }
 
     public void addLine(CartLine line) {
         line.setCart(this);
-        getLines().add(line);
+        getCartLines().add(line);
     }
 
     @Override
@@ -83,7 +74,7 @@ public class Cart {
                 "id=" + id +
                 ", sum=" + sum +
                 ", user=" + user +
-                ", lines=" + lines +
+                ", lines=" + cartLines +
                 '}';
     }
 }

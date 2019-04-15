@@ -41,7 +41,7 @@
         </ul>
     </nav>
 
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" id="products-table">
         <thead>
         <tr>
             <th></th>
@@ -64,6 +64,7 @@
         <thead>
         <tr>
             <th style="width:50%">Product</th>
+            <th style="width:50%">Name</th>
             <th style="width:10%">Price</th>
             <th style="width:8%">Quantity</th>
             <th style="width:22%"></th>

@@ -1,0 +1,13 @@
+{
+  "id": 0,
+  "sum": null,
+  "user": null,
+  "itemCount": 0,
+  "lines": [
+    {
+      "id": 0,
+      "qty": 4,
+      "price": null
+    }
+  ]
+}

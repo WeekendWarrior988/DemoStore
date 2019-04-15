@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Dao<T> {
+public class Dao<T> implements AutoCloseable{
 
     final private EntityManager em;
     final private Class<T> clazz;
@@ -88,5 +88,10 @@ public class Dao<T> {
         criteriaQuery.where(criteriaBuilder.equal(from.get(field), value));
         TypedQuery<T> typedQuery = em.createQuery(criteriaQuery);
         return typedQuery.getResultList();
+    }
+
+    @Override
+    public void close() {
+        em.close();
     }
 }

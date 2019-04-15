@@ -4,7 +4,7 @@ import lt.bta.Demo.api.Dao;
 import lt.bta.Demo.jpa.entities.InvLine;
 import lt.bta.Demo.jpa.entities.Invoice;
 import lt.bta.Demo.jpa.entities.Product;
-import lt.bta.Demo.requests.AddInvoiceLineRequest;
+import lt.bta.Demo.requests.AddCartLineRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -46,26 +46,26 @@ public class InvoiceService extends BaseService<Invoice> {
         return Response.ok(entity).build();
     }
 
-    @POST
-    @Path("/{id}")
-    public Response addInvoiceLine(@PathParam("id") int id, AddInvoiceLineRequest addInvoiceLineRequest) {
-        Dao<Invoice> dao = createDao();
-        Invoice invoice = dao.read(id);
-        if(invoice == null) return Response.status(Response.Status.NOT_FOUND).build();
-
-        Dao<Product> productDao = new Dao<>(Product.class);
-        Product product = productDao.read(addInvoiceLineRequest.getId());
-        if(product == null) return Response.status(Response.Status.NOT_FOUND).build();
-
-        InvLine invLine = new InvLine();
-        invLine.setInvoice(invoice);
-        invLine.setQty(addInvoiceLineRequest.getQty());
-        invLine.setProduct(product);
-        invLine.setPrice(product.getPrice());
-
-        invoice.getLines().add(invLine);
-        invoice = dao.update(invoice);
-
-        return Response.ok(invoice).build();
-    }
+//    @POST
+//    @Path("/{id}")
+//    public Response addInvoiceLine(@PathParam("id") int id, AddCartLineRequest addCartLineRequest) {
+//        Dao<Invoice> dao = createDao();
+//        Invoice invoice = dao.read(id);
+//        if(invoice == null) return Response.status(Response.Status.NOT_FOUND).build();
+//
+//        Dao<Product> productDao = new Dao<>(Product.class);
+//        Product product = productDao.read(addCartLineRequest.getId());
+//        if(product == null) return Response.status(Response.Status.NOT_FOUND).build();
+//
+//        InvLine invLine = new InvLine();
+//        invLine.setInvoice(invoice);
+//        invLine.setQty(addCartLineRequest.getQty());
+//        invLine.setProduct(product);
+//        invLine.setPrice(product.getPrice());
+//
+//        invoice.getLines().add(invLine);
+//        invoice = dao.update(invoice);
+//
+//        return Response.ok(invoice).build();
+//    }
 }
