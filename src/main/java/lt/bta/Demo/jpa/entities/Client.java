@@ -31,12 +31,10 @@ import java.util.Collection;
 })
 
 
-@NamedQueries({
-        @NamedQuery(
-                name = Client.QUERY_BY_CITY,
-                query = "SELECT c FROM Client c WHERE c.city = :city"
-        )
-})
+@NamedQuery(
+        name = Client.QUERY_BY_CITY,
+        query = "SELECT c FROM Client c WHERE c.city = :city"
+)
 public class Client {
     public final static String GRAPH_INVOICE_ONLY = "graph.Client.invoices-only";
     public final static String GRAPH_INVOICE = "graph.Client.invoices";

@@ -43,6 +43,7 @@ public class Cart {
 
     public BigDecimal getSum() {
         BigDecimal cartSum = BigDecimal.ZERO;
+
         for (CartLine cartLine : cartLines) {
             if (cartLine.getProduct().getPrice() != null) {
                 cartSum = cartSum.add(BigDecimal.valueOf(cartLine.getQty()).multiply(cartLine.getProduct().getPrice()));

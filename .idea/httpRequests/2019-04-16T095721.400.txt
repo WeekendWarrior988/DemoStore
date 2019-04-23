@@ -1,0 +1,1 @@
+(was java.lang.NullPointerException) (through reference chain: lt.bta.Demo.jpa.entities.Cart["sum"])

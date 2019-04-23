@@ -17,7 +17,7 @@ public class CartLine {
     @ManyToOne
     private Cart cart;
 
-    @JsonIgnore
+//    @JsonIgnore
     @ManyToOne
     private Product product;
 

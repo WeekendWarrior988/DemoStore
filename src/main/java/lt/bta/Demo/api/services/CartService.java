@@ -24,6 +24,15 @@ public class CartService extends BaseService<Cart> {
         return Cart.class;
     }
 
+    @Override
+    public Response add(Cart cart) {
+
+        try (Dao<Cart> dao = createDao()) {
+
+            dao.create(cart);
+            return Response.ok(cart).build();
+        }
+    }
 
     @GET
     @Path("/{id}/f")
@@ -82,64 +91,28 @@ public class CartService extends BaseService<Cart> {
     }
 
 
-//    @POST
-//    @Path("/{id}")
-//    public Response addCartLine(@PathParam("id") int cartId, AddCartLineRequest addCartLineRequest) {
-//        int productId = addCartLineRequest.getId();
-//        int qty = addCartLineRequest.getQty();
-//
-//        // 1
-//        try (Dao<Cart> cartDao = createDao()) {
-//            Cart cart = cartDao.read(cartId);
-//            if (cart == null)
-//                return Response.status(Response.Status.NOT_FOUND).build();
-//
-//            // 2
-//            Dao<Product> productDao = new Dao<>(Product.class);
-//            Product product = productDao.read(productId);
-//            if (product == null)
-//                return Response.status(Response.Status.NOT_FOUND).build();
-//
-//            // 3 patikrinti ar cart.crtLine turi tokia preke
-//            boolean isCartLine = false;
-//            for (CartLine cartLine : cart.getLines()) {
-//
-//                // jei turi pridėti qty
-//                if (cartLine.getProduct().getId() == product.getId()) {
-//
-//                    cartLine.setQty(cartLine.getQty() + qty);
-//                    isCartLine = true;
-//                    break;
-//                }
-//            }
-//
-//            // jei neturi sukurti nauja cartLine ir paduoti i cart
-//            if (!isCartLine) {
-//
-//                CartLine cartLine = new CartLine();
-//                cartLine.setCart(cart);
-//                cartLine.setQty(qty);
-//                cartLine.setProduct(product);
-//                cart.getLines().add(cartLine);
-//            }
-//
-//            cart = cartDao.update(cart);
-//            return Response.ok(cart).build();
-//        }
-//    }
 
-//    @POST
-//    @Path("/add")
-//    public Response addCart(AddCartLineRequest addCartLineRequest) {
-//        HttpSession session = servletRequest.getSession();
-//        Cart cart = (Cart) session.getAttribute("cart");
-//        if (cart == null) {
-//            cart = new Cart();
-//            session.setAttribute("cart", cart);
-//        }
-//        Dao<Cart> dao =createDao();
-//        dao.create(cart);
-//
-//        return Response.ok(cart).build();
-//    }
+    @DELETE
+    @Path("/deleteLine/{id}")
+    public Response deleteCart(@PathParam("id") int id){
+        HttpSession session = servletRequest.getSession();
+
+        Object obj = session.getAttribute("cart");
+        Cart cart;
+        if (obj instanceof Cart) {
+            cart = (Cart) obj;
+        } else {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        Optional<CartLine> line = cart.getCartLines().stream()
+                .filter(x->x.getProduct().getId() == id)
+                .findFirst();
+
+        cart.getCartLines().remove(line);
+
+        return Response.ok(cart).build();
+
+    }
+
 }
