@@ -1,5 +1,6 @@
 package lt.bta.Demo.api.services;
 
+import lt.bta.Demo.jpa.entities.Cart;
 import lt.bta.Demo.requests.CredentialsRequest;
 import lt.bta.Demo.helpers.JWTHelper;
 import lt.bta.Demo.api.Dao;
@@ -65,16 +66,19 @@ public class UserService {
             return Response.status(Response.Status.UNAUTHORIZED).build();
         }
 
+
         User user = users.get(0);
 
         HttpSession session = servletRequest.getSession();
         session.setAttribute("user", user);
+
 
 //        User user = users.get(0);
 //        String token = JWTHelper.createJWT("my-app",
 //                user.getId(), user.getUsername(), user.getRole(), 1000L * 60 * 60);
 
 //        return Response.ok().entity(Collections.singletonMap("token", token)).build();
+
         return Response.ok(Collections.singletonMap("login", "ok")).build();
     }
 

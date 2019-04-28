@@ -7,11 +7,11 @@ import java.util.Set;
 @Entity
 @Table(name = "carts")
 @NamedEntityGraph(
-        name = Cart.GRAPH_PRODUCTS,
+        name = Cart.GRAPH_CART_LINES,
         attributeNodes = @NamedAttributeNode("cartLines")
 )
 public class Cart {
-    public static final String GRAPH_PRODUCTS = "graph.cart.lines";
+    public static final String GRAPH_CART_LINES = "graph.cart.lines";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,14 +42,15 @@ public class Cart {
     }
 
     public BigDecimal getSum() {
-        BigDecimal cartSum = BigDecimal.ZERO;
-
-        for (CartLine cartLine : cartLines) {
-            if (cartLine.getProduct().getPrice() != null) {
-                cartSum = cartSum.add(BigDecimal.valueOf(cartLine.getQty()).multiply(cartLine.getProduct().getPrice()));
-            }
-        }
-        return cartSum;
+//        BigDecimal cartSum = BigDecimal.ZERO;
+//
+//        for (CartLine cartLine : cartLines) {
+//
+//            if (cartLine.getProduct().getPrice() != null) {
+//                cartSum = cartSum.add(BigDecimal.valueOf(cartLine.getQty()).multiply(cartLine.getProduct().getPrice()));
+//            }
+//        }
+        return null;
     }
 
     public void setSum(BigDecimal sum) {
@@ -77,5 +78,17 @@ public class Cart {
                 ", user=" + user +
                 ", lines=" + cartLines +
                 '}';
+    }
+
+    public void sumQtyIfHasProductOrAddItemIfProductIsNew(CartLine item) {
+
+        for (CartLine cartLine : this.cartLines) {
+
+            if (cartLine.getProduct().getId() == item.getProduct().getId()) {
+                cartLine.setQty(cartLine.getQty() + item.getQty());
+                return;
+            }
+        }
+        this.cartLines.add(item);
     }
 }

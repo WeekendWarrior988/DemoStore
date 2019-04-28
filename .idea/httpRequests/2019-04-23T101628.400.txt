@@ -1,2 +1,0 @@
-Unrecognized field "qty" (class lt.bta.Demo.jpa.entities.Cart), not marked as ignorable (4 known properties: "id", "cartLines", "sum", "user"])
- at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 19] (through reference chain: lt.bta.Demo.jpa.entities.Cart["qty"])

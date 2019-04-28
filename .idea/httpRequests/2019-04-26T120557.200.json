@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "sum": null,
+  "user": {
+    "id": 1,
+    "username": "kazkas@sample.com",
+    "secret": "$2a$10$LABuWuQZ1yWlhXLootYKbeUXSGq0LRfU9rnrhrkq6bJe9JacxMeN.",
+    "role": "ADMIN"
+  },
+  "cartLines": null
+}

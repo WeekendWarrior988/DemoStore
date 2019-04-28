@@ -67,10 +67,4 @@ public abstract class BaseService<T>  {
         return Response.ok().entity(dao.list(size, skip)).build();
     }
 
-    @GET
-    @Path("/listAll")
-    public Response listAll() {
-        Dao<T> dao = createDao();
-        return Response.ok().entity(dao.listAll()).build();
-    }
 }

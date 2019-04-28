@@ -22,6 +22,7 @@ Accept: application/json
 POST http://localhost:8080/belekas/api/auth/login
 Content-Type: application/json
 Accept: application/json
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
 
 {"username": "kazkas@sample.com", "password":  "kazkas"}
 

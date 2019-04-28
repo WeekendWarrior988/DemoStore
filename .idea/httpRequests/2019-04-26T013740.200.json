@@ -1,0 +1,19 @@
+{
+  "id": 0,
+  "sum": null,
+  "user": null,
+  "cartLines": [
+    {
+      "id": 0,
+      "product": {
+        "id": 4,
+        "name": "Windows 7",
+        "description": "MS Windows 7",
+        "price": 9.99,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJzcw3BLJYIjDH52B2NQZ5qsZrr607OYUF_pv9TRH6dAruglV"
+      },
+      "qty": 5,
+      "price": null
+    }
+  ]
+}

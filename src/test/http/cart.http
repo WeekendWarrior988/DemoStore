@@ -1,4 +1,39 @@
+#Create new cart for user
+POST http://localhost:8080/belekas/api/cart/new
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=B53D036A8B54B929D7AC879675E85EFC
 
+{}
+
+###
+
+#Update in session
+PUT http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
+
+{"id": 2, "qty": 5}
+
+###
+
+#Update cart from session to DB
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
+
+###
+
+#Update in DB
+PUT http://localhost:8080/belekas/api/cart/update/1
+Accept: application/json
+Content-Type: application/json
+
+{"id": 2, "qty": 2}
+
+###
 GET http://localhost:8080/belekas/api/cart/1/f
 Accept: application/json
 
@@ -6,38 +41,15 @@ Accept: application/json
 
 GET http://localhost:8080/belekas/api/cart
 Accept: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
+Cookie: JSESSIONID=74B0EADC287641B609D853A1A83A71ED;
 
 ###
 
-POST http://localhost:8080/belekas/api/cart
+#Delete in session
+DELETE http://localhost:8080/belekas/api/cart/deleteLine/5
 Accept: application/json
 Content-Type: application/json
-
-{}
-
-###
-
-POST http://localhost:8080/belekas/api/cart
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
+Cookie: JSESSIONID=74B0EADC287641B609D853A1A83A71ED;
 
 ###
 
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
-
-{"id": 1, "qty": 2}
-
-###
-
-DELETE http://localhost:8080/belekas/api/cart/deleteLine/2
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
-
-###

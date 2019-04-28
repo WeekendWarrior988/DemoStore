@@ -1,0 +1,31 @@
+{
+  "id": 0,
+  "sum": 149.90,
+  "user": null,
+  "cartLines": [
+    {
+      "id": 0,
+      "product": {
+        "id": 2,
+        "name": "Windows XP",
+        "description": "MS Windows XP",
+        "price": 19.99,
+        "image": "https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/1346/2016/05/Windows-XP-Wallpaper.jpg"
+      },
+      "qty": 5,
+      "price": null
+    },
+    {
+      "id": 0,
+      "product": {
+        "id": 1,
+        "name": "Windows 3.11",
+        "description": "MS Windows 3.11",
+        "price": 9.99,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsNypuo6W50AdB6Bnz1c5Nz2iZxdvHB1-bIl8mghBs1gEWzlTOw"
+      },
+      "qty": 5,
+      "price": null
+    }
+  ]
+}

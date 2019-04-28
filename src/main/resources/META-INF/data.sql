@@ -19,10 +19,4 @@ INSERT INTO invoices(date, number, sum, client_id) VALUES('2018-09-26', 'INV 001
 INSERT INTO inv_lines(invoice_id, product_id, price, qty) VALUES(1, 3, 99.99, 10);
 INSERT INTO inv_lines(invoice_id, product_id, price, qty) VALUES(1, 1, 9.99, 100);
 
-# INSERT INTO users(username, secret, role) VALUES ('vardas@firma.lt', '$2a$12$DWh1PyJsP6JzFzP0VDrPcOzOFHiI260u.2Zx5ksbFpQ/KW4t1xDKK', 'ADMIN');
-#
-# INSERT INTO carts(number, sum) VALUES ('5524', 19.99);
-# INSERT INTO cart_lines (cart_id, product_id, qty, price) values (1, 4, 2, 9.99);
-# INSERT INTO cart_lines (cart_id, product_id, qty, price) values (1, 2, 1, 19.99);
-# INSERT INTO cart_lines (cart_id, product_id, qty, price) values (1, 1, 1, 9.99);
 

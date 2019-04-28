@@ -1,0 +1,2 @@
+Cannot deserialize value of type `java.math.BigDecimal` from String "zero": not a valid representation
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 9] (through reference chain: lt.bta.Demo.jpa.entities.Cart["sum"])

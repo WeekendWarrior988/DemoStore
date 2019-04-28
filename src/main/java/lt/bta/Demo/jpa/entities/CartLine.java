@@ -71,7 +71,6 @@ public class CartLine {
                 "id=" + id +
                 ", product=" + product +
                 ", qty=" + qty +
-                ", price=" + price +
                 '}';
     }
 }

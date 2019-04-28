@@ -1,34 +1,38 @@
-GET http://localhost:8080/belekas/api/cart
-Accept: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
-
-<> 2019-04-23T102809.200.json
-
-###
-
-DELETE http://localhost:8080/belekas/api/cart/deleteLine/2
+PUT http://localhost:8080/belekas/api/cart/keepusercart
 Accept: application/json
 Content-Type: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
+
+<> 2019-04-28T072126.200.json
 
 ###
 
-GET http://localhost:8080/belekas/api/cart
+POST http://localhost:8080/belekas/api/cart/keepusercart
 Accept: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
+Content-Type: application/json
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
 
-<> 2019-04-23T102735.200.json
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-28T072004.200.json
 
 ###
 
 POST http://localhost:8080/belekas/api/cart/add
 Accept: application/json
 Content-Type: application/json
-Cookie: JSESSIONID=DD3298BFA2E07922DEF92419454103CF
+Cookie: JSESSIONID=A72624B52037A53BFC12B858EA438C2D
 
-{"id": 1, "qty": 2}
+{"id": 2, "qty": 5}
 
-<> 2019-04-23T102707.200.json
+<> 2019-04-28T071941.200.json
 
 ###
 
@@ -36,426 +40,455 @@ POST http://localhost:8080/belekas/api/cart/add
 Accept: application/json
 Content-Type: application/json
 
-{"id": 3, "qty": 2}
+{"id": 4, "qty": 5}
 
-<> 2019-04-23T102640.200.json
+<> 2019-04-28T071921.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+{"id": 4, "qty": 5}
+
+<> 2019-04-26T013740.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=B53D036A8B54B929D7AC879675E85EFC
+
+###
+
+POST http://localhost:8080/belekas/api/cart/new
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=B53D036A8B54B929D7AC879675E85EFC
+
+{}
+
+<> 2019-04-26T013722.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=B53D036A8B54B929D7AC879675E85EFC
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=B53D036A8B54B929D7AC879675E85EFC
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T013633.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+{"id": 1, "qty": 5}
+
+<> 2019-04-26T013607.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+###
+
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+<> 2019-04-26T011925.500.html
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T011910.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=0A8DED7980FD7601E1AE785A5DCA8BA7
+
+{"id": 1, "qty": 5}
+
+<> 2019-04-26T011838.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+
+{"id": 2, "qty": 5}
+
+<> 2019-04-26T011821.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/create
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas", "role": "ADMIN"}
+
+###
+
+POST http://localhost:8080/belekas/api/cart/new
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=E2E99AD5205D8DAC857EE36A42D4932E
+
+{}
+
+<> 2019-04-26T120557.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T120538.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/new
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=96F7C96BE4083C9CCCA399C78D6E9F89
+
+{}
+
+<> 2019-04-26T120426.400.txt
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=96F7C96BE4083C9CCCA399C78D6E9F89
+
+{}
+
+<> 2019-04-26T120345.400.txt
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T120327.200.json
+
+###
+
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=91989E3D160C03E3478A0E005B9350B2
+
+<> 2019-04-26T115359.500.html
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=91989E3D160C03E3478A0E005B9350B2
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T115349.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=91989E3D160C03E3478A0E005B9350B2
+
+{"id": 2, "qty": 5}
+
+<> 2019-04-26T115309.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=746724ACFB3ACEF22437F87E86760592
+
+{"id": 4, "qty": 5}
+
+<> 2019-04-26T115253.200.json
+
+###
+
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=746724ACFB3ACEF22437F87E86760592
+
+<> 2019-04-26T111648.500.html
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=746724ACFB3ACEF22437F87E86760592
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T111637.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=746724ACFB3ACEF22437F87E86760592
+
+{"id": 4, "qty": 5}
+
+<> 2019-04-26T111622.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
 Accept: application/json
 Content-Type: application/json
 
-{"id": 5, "qty": 5}
+{"id": 2, "qty": 5}
 
-<> 2019-04-23T101628.400.txt
+<> 2019-04-26T111601.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+
+{"id": 1, "qty": 5}
+
+<> 2019-04-26T111556.200.json
+
+###
+
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=F50A368A379616E477730A5AF84966F8
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=F50A368A379616E477730A5AF84966F8
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-26T111016.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=F50A368A379616E477730A5AF84966F8
+
+{"id": 1, "qty": 5}
+
+<> 2019-04-26T111003.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=82D161CB460EDB797F0C53099059A58B
+
+{"id": 2, "qty": 5}
+
+<> 2019-04-26T110942.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/create
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas", "role": "ADMIN"}
+
+###
+
+PUT http://localhost:8080/belekas/api/cart/sync
+Accept: application/json
+Cookie: JSESSIONID=82D161CB460EDB797F0C53099059A58B
+
+<> 2019-04-25T062305.500.html
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+Cookie: JSESSIONID=82D161CB460EDB797F0C53099059A58B
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-25T062251.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+Cookie: JSESSIONID=82D161CB460EDB797F0C53099059A58B
+
+{"id": 2, "qty": 5}
+
+<> 2019-04-25T062217.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/cart/add
+Accept: application/json
+Content-Type: application/json
+
+{"id": 4, "qty": 5}
+
+<> 2019-04-25T062159.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas"}
+
+<> 2019-04-25T062130.200.json
+
+###
+
+POST http://localhost:8080/belekas/api/auth/create
+Content-Type: application/json
+Accept: application/json
+
+{"username": "kazkas@sample.com", "password":  "kazkas", "role": "ADMIN"}
+
+###
+
+POST http://localhost:8080/belekas/api/cart/new
+Content-Type: application/json
+Accept: application/json
+
+{}
+
+<> 2019-04-25T055923.500.html
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
 Content-Type: application/json
-
-{}
-
-<> 2019-04-16T033159.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/final
 Accept: application/json
-Content-Type: application/json
 
-{}
+{"sum": 0}
 
-<> 2019-04-16T033032.400.txt
-
-###
-
-POST http://localhost:8080/belekas/api/cart/final
-Accept: application/json
-Content-Type: application/json
-
-{}
-
-<> 2019-04-16T033022.400.txt
+<> 2019-04-25T054613.400.txt
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
 Content-Type: application/json
+Accept: application/json
 
-{}
+{"sum": "0"}
 
-<> 2019-04-16T032825.400.txt
+<> 2019-04-25T054605.400.txt
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
-
-{}
-
-###
-
-GET http://localhost:8080/belekas/api/cart
-Accept: application/json
-Cookie: JSESSIONID=7401D3175B8F4B674D142303124025E8
-
-{}
-
-<> 2019-04-16T023115.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart
-Accept: application/json
-Cookie: JSESSIONID=7401D3175B8F4B674D142303124025E8
-
-{}
-
-<> 2019-04-16T023046.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
 Content-Type: application/json
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-16T023022.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart
 Accept: application/json
-Cookie: JSESSIONID=17A6B4E01FEBB552D5BE3F17C3D0D34F
 
-{}
+{"sum": "zero"}
 
-###
-
-GET http://localhost:8080/belekas/api/cart
-Accept: application/json
-Cookie: JSESSIONID=17A6B4E01FEBB552D5BE3F17C3D0D34F
-
-{}
-
-<> 2019-04-16T022859.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-16T022820.200.json
+<> 2019-04-25T054542.400.txt
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
 Content-Type: application/json
-Cookie: JSESSIONID=8290B369A1E716977AD30968A178B5A7
+Accept: application/json
 
 {}
 
-<> 2019-04-16T095913.400.txt
-
-###
-
-GET http://localhost:8080/belekas/api/cart
-Accept: application/json
-Cookie: JSESSIONID=8290B369A1E716977AD30968A178B5A7
-
-<> 2019-04-16T095814.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-16T095735.200.json
+<> 2019-04-25T054522.400.txt
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
 Content-Type: application/json
+Accept: application/json
 
 {}
 
-<> 2019-04-16T095721.400.txt
+<> 2019-04-25T054406.500.html
 
 ###
 
 POST http://localhost:8080/belekas/api/cart
-Accept: application/json
 Content-Type: application/json
+Accept: application/json
 
 {}
 
-<> 2019-04-16T095639.400.txt
+<> 2019-04-25T054357.500.html
 
 ###
 
-POST http://localhost:8080/belekas/api/invoice
-Accept: application/json
+POST http://localhost:8080/belekas/api/cart
 Content-Type: application/json
+Accept: application/json
 
 {}
 
-<> 2019-04-16T095142.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/invoice/1/f
-Accept: application/json
-
-<> 2019-04-16T094925.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/invoice/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-16T094813.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/invoice/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=FB5DFA312C823E6B1B4BAE916DB0FFC9
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-15T020443.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 3, "qty": 5}
-
-<> 2019-04-15T020220.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 3, "qty": 5}
-
-<> 2019-04-15T013823.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=D3D74924002308D9301C660002F0291A
-
-{"id": 3, "qty": 5}
-
-<> 2019-04-15T012243.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-15T012132.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/product/list
-Accept: application/json
-
-<> 2019-04-15T010933.500.html
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=CB3D98EB05303959A74801F25A508E73
-
-{"id": 3, "qty": 2}
-
-<> 2019-04-15T115834.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 1, "qty": 4}
-
-<> 2019-04-15T115725.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=C2755EEAAFD9C0C0B753E8A88F296BBB
-
-{"id": 2, "qty": 4}
-
-<> 2019-04-15T115454.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-Cookie: JSESSIONID=C2755EEAAFD9C0C0B753E8A88F296BBB
-
-{"id": 1, "qty": 4}
-
-<> 2019-04-15T115321.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/add
-Accept: application/json
-Content-Type: application/json
-
-{"id": 1, "qty": 4}
-
-<> 2019-04-15T115214.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101056.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101054.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101053.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101051.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101049.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T101038.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-15T101007.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-15T101006.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-15T101005.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-15T101004.200.json
-
-###
-
-POST http://localhost:8080/belekas/api/cart/1
-Accept: application/json
-Content-Type: application/json
-
-{"id": 5, "qty": 5}
-
-<> 2019-04-15T101003.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T100955.200.json
-
-###
-
-GET http://localhost:8080/belekas/api/cart/1/f
-Accept: application/json
-
-<> 2019-04-15T100954.200.json
+<> 2019-04-25T052541.400.txt
 
 ###
 

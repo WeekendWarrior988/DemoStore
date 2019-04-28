@@ -35,16 +35,6 @@ public class Dao<T> implements AutoCloseable{
         return typedQuery.getResultList();
     }
 
-    public List<T> listAll() {
-
-        CriteriaBuilder criteriaBuilder = em.getCriteriaBuilder();
-        CriteriaQuery<T> criteriaQuery = criteriaBuilder.createQuery(clazz);
-        Root<T> from = criteriaQuery.from(clazz);
-        CriteriaQuery<T> select = criteriaQuery.select(from);
-        TypedQuery<T> typedQuery = em.createQuery(select);
-        return typedQuery.getResultList();
-    }
-
     public T create(T entity) {
         em.getTransaction().begin();
         em.persist(entity);
