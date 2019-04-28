@@ -79,16 +79,4 @@ public class Cart {
                 ", lines=" + cartLines +
                 '}';
     }
-
-    public void sumQtyIfHasProductOrAddItemIfProductIsNew(CartLine item) {
-
-        for (CartLine cartLine : this.cartLines) {
-
-            if (cartLine.getProduct().getId() == item.getProduct().getId()) {
-                cartLine.setQty(cartLine.getQty() + item.getQty());
-                return;
-            }
-        }
-        this.cartLines.add(item);
-    }
 }

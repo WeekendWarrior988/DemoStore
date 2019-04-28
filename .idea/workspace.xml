@@ -7,86 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4330fff0-e7b7-4fde-a72f-54fe3e0bf147" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T010933.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T012132.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T012243.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T013823.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T020220.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T020443.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T100954.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T100955.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101003.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101004.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101005.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101006.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101007.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101038.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101049.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101051.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101053.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101054.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T101056.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T115214.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T115321.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T115454.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T115725.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-15T115834.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T022820.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T022859.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T023022.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T023046.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T023115.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T032825.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T033022.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T033032.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T033159.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T094813.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T094925.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095142.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095639.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095721.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095735.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095814.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-16T095913.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-23T101628.400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-23T102640.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-23T102707.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-23T102735.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-23T102809.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-04-28T072126.200.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-04-28T072126.200.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/BaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/CartService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/api/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/CartLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/CartLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/DemoTom-1.0-SNAPSHOT.war/WEB-INF/classes/lt/bta/Demo/jpa/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/BaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/CartService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/api/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/CartLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/CartLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/lt/bta/Demo/jpa/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/filters/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/filters/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/CartLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/CartLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/http/cart.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/http/cart.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/http/users.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/http/users.http" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -202,10 +124,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/CartService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3128">
+            <state relative-caret-position="272">
               <caret line="184" column="9" lean-forward="true" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -273,11 +195,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="236">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -358,13 +280,13 @@
         <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/CartLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/http/users.http" />
         <option value="$PROJECT_DIR$/src/test/http/cart.http" />
         <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java" />
       </list>
     </option>
   </component>
@@ -381,7 +303,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2" />
     <option name="y" value="4" />
     <option name="width" value="599" />
@@ -529,7 +451,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556471593590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556471778978" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../balticDarbas" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -1840,15 +1762,15 @@
       <workItem from="1555229943763" duration="37621000" />
       <workItem from="1555412246234" duration="18076000" />
       <workItem from="1555586210278" duration="35676000" />
-      <workItem from="1556203290796" duration="22713000" />
+      <workItem from="1556203290796" duration="23006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="394534000" />
+    <option name="totallyTimeSpent" value="394827000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1435" height="772" extended-state="7" />
+    <frame x="-6" y="-6" width="1435" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" sideWeight="0.5133215" side_tool="true" weight="0.25910932" />
@@ -1885,7 +1807,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.32955465" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.21174765" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21174765" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -2173,16 +2095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="51" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -2230,12 +2142,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/api/services/CartService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
+        <state relative-caret-position="272">
           <caret line="184" column="9" lean-forward="true" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#761#762#0" expanded="true" />
             <element signature="e#794#795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lt/bta/Demo/jpa/entities/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
